@@ -1,0 +1,26 @@
+###
+server:
+    port: 5000
+
+###
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/demo_01?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+        username: root
+        password: 4A_sLpInPnhw]THL
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+    # config for terminal (enable color): spring.output.ansi.enabled=always or
+    output: 
+        ansi:
+            enabled: always
+
+# swagger-ui custom path
+springdoc:
+    swagger-ui:
+        path: /swagger-ui.html
+        operationsSorter: method
+
+
