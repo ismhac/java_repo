@@ -3,9 +3,11 @@ package com.example.demo_01.mapstruct;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
+
 import org.mapstruct.factory.Mappers;
 
 import com.example.demo_01.dtos.UserDto;
+
 import com.example.demo_01.entities.User;
 
 @Mapper(componentModel = "spring")

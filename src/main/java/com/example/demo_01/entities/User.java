@@ -47,8 +47,9 @@ public class User implements UserDetails {
     @JsonProperty("last_name")
     private String lastName;
 
-    @Column(unique = true)
+    @Column(name = "email", unique = true)
     private String email;
+
     private String password;
 
     @Enumerated(EnumType.STRING)
